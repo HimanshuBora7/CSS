@@ -1,26 +1,36 @@
-
-body{
+html{
     font-size: 22px;
 }
-h1,h2{
-    color:blue;
+
+
+body {
+  
 }
 
-p{
-    color: purple;
+main{
+    font-family: monospace;
+}
+button,input,textarea,select{
+    font: inherit;
+}
+h1,
+h2 {
+  color: blue;
 }
 
-.highlight{
-    text-transform: uppercase;
-    background-color: gold;
+p {
+  color: purple;
 }
 
-
-
-.grey{
-color: gray;
+.highlight {
+  text-transform: uppercase;
+  background-color: gold;
 }
 
-#second{
-    font-style: italic;
+.grey {
+  color: gray;
+}
+
+#second {
+  font-style: italic;
 }
