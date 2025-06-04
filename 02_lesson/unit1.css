@@ -1,0 +1,14 @@
+h1{
+    border: 2px dashed black;
+    width: 50%;
+    font-size: 2rem;
+    padding: 1.5em;
+}
+p{
+    font-size:22px;
+    border:3px dashed greenyellow;
+    width: 80%;
+    width: 50ch;
+    padding: 1.5em;
+
+}
