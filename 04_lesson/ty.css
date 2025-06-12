@@ -1,3 +1,40 @@
 /*
 Typography is the way to present the way that text is arranges and presented
 */
+
+body{
+    padding: 25%;
+    font-size: 1.2rem;
+    color: purple;
+    /* font-family: 'Courier New', Courier, monospace; */
+    /* common font family to use on browser is sans-serif */
+    /* font-family: sans-serif; */
+    font-family: cursive;
+
+}
+/* input,button{
+    font: inherit;
+} */
+
+p{
+    /* text-align: justify; */
+    /* text-indent: 2em; */
+    line-height: 1.5;
+    /* letter-spacing: 0.13em;*/
+    /* font-weight: 600; */
+    /* font-style: oblique; */
+         
+}
+
+.
+
+
+
+
+
+
+
+
+
+
+
