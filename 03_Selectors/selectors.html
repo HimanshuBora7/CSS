@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selectors</title>
+    <style>
+      /*
+        Types of selectorss
+
+        1. Universal selector
+        2. Type Selector
+        3. Class selector
+        4. ID selector
+        5. Attribute selector
+        6. Descendant selector
+        7. Child selector
+
+         */
+
+      /* 1. Universal ~ selects everythinf primary use is to remove the browser injected css*/
+      * {
+        margin: 0px;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /*2. Type selector ~ here we just mention the name of the element we wanna select */
+      p {
+        font-size: 22px;
+        color: rgb(161, 80, 4);
+
+        /* margin: 15px 20px 10px 20px; */
+        /* margin applies in clockwise direction frm top -> right -> bottom ->left*/
+        /*same applies for padding*/
+
+        padding: 5px 10px 10px;
+        margin-bottom: 10px;
+      }
+
+      /*3. Class selectors */
+
+      .highlight {
+        background-color: blueviolet;
+        border-radius: 10px;
+        color: aliceblue;
+        width: 50vh;
+        margin-left: 10vh;
+        margin-bottom: 20px;
+      }
+
+      /*4. ID selector*/
+      /*we should have ony one unique id on our webpage and we can have as many as classes */
+      #header {
+        background-color: deeppink;
+        width: 30vh;
+        font-size: 22px;
+        margin: 5vh 15vh;
+        color: aliceblue;
+        border-radius: 5px;
+        /* padding-left: 40px; */
+        display: flex;
+        justify-content: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+
+      /*5. Attribute selector */
+      /* name the element we are selecting and what kind of attribute we are targeting  and optionally we can enter the value of that attribute */
+      input[type="text"] {
+        /* background-color: fuchsia; */
+        color: black;
+        padding: 10px;
+        margin-left: 90px;
+        margin-bottom: 10px;
+        border: 4px solid;
+        margin: 10px 80px;
+        border-radius: 10px;
+        border-color: rgb(145, 26, 189);
+      }
+      /*6. Descendant Selector */
+      article p {
+        background-color: #03045e;
+        color: #caf0f8;
+        width: fit-content;
+        margin-left: 10vh;
+        border-radius: 10px;
+        padding: 20px;
+        font-style: italic;
+      }
+      /* 7. Child selector*/
+      div > p {
+        background: #28112b;
+        color: #8daa91;
+        width: fit-content;
+        border-radius: 5px;
+        margin-left: 80px;
+        padding-top: 10px;
+        margin-top: 13px;
+      }
+      /* 8. Adjacent Sibling selector*/
+      h1 + n {
+        font-weight: bold;
+      }
+
+      /* 9. general sibling selector */
+      h2 ~ p {
+        color: red;
+      }
+
+      /*10. Pseudo selector class */
+      a:hover {
+        background-color: rgb(168, 165, 184);
+        padding: 10px;
+        border-radius: 10px;
+        width: max-content;
+        margin: 5px;
+      }
+      /* 11. Pseudo-element Selector */
+      p::first-letter {
+        font-weight: bolder;
+        font-size: 30px;
+      }
+
+      /*12. Grouping the selector*/
+      h1,
+      h2,
+      h3 {
+        color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="header">This is the header</header>
+
+    <h1>Main Headings</h1>
+    <p>
+      This paragraph is adjacent to h1 and demonstrates the adjacent sibling
+      selector.
+    </p>
+    <p>This is a regular paragraph showing the type of selector.</p>
+
+    <p class="highlight">
+      This paragraph has a highlight class, demonstrating the class selector.
+    </p>
+
+    <input type="text" placeholder="Enter the text here" />
+
+    <article>
+      <p>
+        This paragraph is inside an article, showing the descendant selector.
+      </p>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+        doloremque corporis quidem dolorem. Enim, earum quidem? Nam ipsum iste
+        voluptatem saepe quaerat impedit velit itaque, quae obcaecati
+        accusantium esse perspiciatis?
+      </p>
+    </article>
+
+    <ul>
+      <li>Direct child list item</li>
+      <li>
+        Another direct child
+        <ul>
+          <li>This is not the a direct child of the first ul</li>
+        </ul>
+      </li>
+    </ul>
+    <div>
+      <p>I am a child</p>
+      <p>I am a child</p>
+      <section>
+        <p>I am a decendent</p>
+      </section>
+      <p>paragraph 4 in the div.</p>
+    </div>
+
+    <h2>Sub Heading</h2>
+    <p>
+      This is the a sibling paragraph to h2, demonstrating the general sibling
+      selector.
+    </p>
+    <div>
+      THis is a sibling div to h2
+      <p>hola amigos</p>
+    </div>
+    <p>THis is another sibling paragraph to h2</p>
+    <a href="#">Hover over me to see the pseudo-class selector in action </a>
+    <p>
+      this paragraph demonstrates pseudo-element selectors with a styled first
+      line and first letter
+    </p>
+    <h3>Heading 3</h3>
+
+    <p>
+      The headings h1,h2, and h3 use the groupings selector for sonsistent font
+      family.
+    </p>
+  </body>
+</html>
