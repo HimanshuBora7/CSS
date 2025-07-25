@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Bitcount Single", system-ui;
+  height: 100%;
+  font-weight: bold;
+}
+.container {
+  background: linear-gradient(180deg, #1dbde6, #f1515e);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.content {
+  text-align: center;
+  background: linear-gradient(360deg, #f44369, #3e3b92);
+  border-radius: 40px;
+  padding: 2rem;
+  margin: 100px;
+  color: white;
+  max-width: 400px;
+  width: 90%;
+}
+.logo {
+  width: 150px;
+  object-fit: contain;
+}
+
+h1 {
+  margin-bottom: 30px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+input[type="email"] {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid wheat;
+}
+
+button {
+  padding: 15px;
+  background: linear-gradient(200deg, #c81d77, #6710c2);
+  color: aliceblue;
+  width: fit-content;
+  margin-left: 155px;
+  border: 1px solid #ca0818;
+  border-radius: 10px;
+}
+button:hover {
+  background: linear-gradient(180deg, #0e1c26, #2a454b, #294861);
+}
