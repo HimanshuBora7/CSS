@@ -20,10 +20,12 @@ h1 {
   gap: 10px;
   align-items: center;
   justify-items: center;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+  min-height: 350px;
+  max-width: 250px;
 
-  background-image: url(https://images.unsplash.com/photo-1585589197566-b482772f8831?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8d2VhcG9ufGVufDB8fDB8fHww);
-  background-size: cover;
-  background-position: center;
   position: relative;
 }
 .container::before {
@@ -33,11 +35,11 @@ h1 {
   left: 0;
   width: 100%;
   height: 100%;
-  background-size: inherit;
+  background-image: url(https://images.unsplash.com/photo-1585589197566-b482772f8831?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8d2VhcG9ufGVufDB8fDB8fHww);
+  filter: blur(1.2px);
   background-size: cover;
   background-position: center;
-  filter: blur(5px);
-  opacity: 0.7;
+
   z-index: -1;
 }
 h3 {
@@ -67,6 +69,7 @@ h3::before {
   width: 100%;
   height: 100%;
   background-image: url(https://images.unsplash.com/photo-1581955957575-542d613ed134?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8YnVsbGV0fGVufDB8fDB8fHww);
+  filter: blur(1.5px);
   background-size: cover;
   background-position: center;
   opacity: 0.7;
@@ -86,14 +89,6 @@ h3::before {
   border: 3px solid palevioletred;
 }
 
-.img {
-  grid-area: image;
-  max-width: 100%;
-  width: 100%;
-
-  height: 100px;
-}
-
 .btn {
   grid-area: buttons;
   display: flex;
@@ -104,7 +99,10 @@ button {
   padding: 8px 16px;
   cursor: pointer;
 }
-img {
-  max-width: 100px;
-  height: auto;
+.img1 {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  transform: rotate(90deg);
+  border: 1px solid black;
 }
