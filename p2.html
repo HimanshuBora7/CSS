@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid 2</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: black;
+        color: white;
+      }
+      .container {
+        border: 1px solid violet;
+        display: grid;
+        grid-template-columns: 33% 32% 34%;
+        grid-template-rows: 33% 32% 34%;
+        gap: 4px;
+        padding: 10px;
+        height: 50vh;
+      }
+      .first {
+        padding: 10px;
+        height: fit-content;
+        border: 1px solid palevioletred;
+        order: 3;
+      }
+      .second {
+        padding: 10px;
+        border: 1px solid orange;
+        height: fit-content;
+      }
+      .third {
+        height: fit-content;
+        padding: 10px;
+        border: 1px solid red;
+        order: -1;
+        /* grid-column-start: 3;
+        grid-column-end: 2; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="first">
+        <p>Lorem, ipsum dolor.</p>
+      </div>
+      <div class="second">
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+      <div class="third">
+        <p>Lorem ipsum dolor sit amet adipisicing.</p>
+      </div>
+    </div>
+  </body>
+</html>
