@@ -1,0 +1,23 @@
+p {
+  outline: 4px solid rebeccapurple;
+  padding: 10px;
+}
+a {
+  display: inline-block;
+  margin: 1px;
+  padding: 4px;
+  outline: 3px solid yellowgreen;
+}
+
+.btn {
+  display: inline-block;
+  background-color: aqua;
+  color: black;
+  padding: 25px 15px;
+  text-decoration: none;
+  margin-right: 10px;
+}
+.btn:hover {
+  background: darkblue;
+  color: aliceblue;
+}
